@@ -1,0 +1,196 @@
+/*line 107 - catagory*/
+
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:  lightgreen;
+    
+    
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    align-items: center;
+    background-color: rgba(14, 14, 14, 0.459);
+    /* Transparent background */
+    padding: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: #000000;
+}
+
+ 
+ .logo:hover { 
+    font-size: 24px;
+  color: transparent; /* Set the text color to transparent */
+  background-image: radial-gradient(red,blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+   --text-fill-color: transparent;
+    
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center
+}
+
+.navbar .nav-links li {
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: underline rgb(255, 255, 255) 2px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color:
+        #333;
+    transition: color 0.3s ease;
+    justify-content: center
+}
+
+.navbar .nav-links a:hover {
+    color: #000000;
+ text-decoration: underline rgb(22, 22, 22) 3px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: auto;
+}
+
+/*carosel*/ 
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 150px; /* Set the height of the carousel */
+    overflow: hidden;
+    border-radius: 50px;
+
+  }
+  
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*catagory*/
+
+
+
+
+  
+    /* Container for the entire page */
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        box-sizing: border-box;
+      }
+  
+      /* Header section for title */
+      .header {
+        height: 15%;
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #ddd;
+      }
+  
+      h1 {
+        font-size: 32px;
+        margin: 0;
+        color: #333;
+      }
+  
+      /* Category section */
+      .category-section {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+  
+      /* Category grid styling */
+      .categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 40px;
+        justify-content: center;
+        width: 100%;
+      }
+  
+      /* Individual category styling */
+      .category {
+        text-align: center;
+      }
+  
+      .category img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: contain;
+        border: 2px solid #ddd;
+        padding: 5px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  
+      .category-label {
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #555;
+      }
+  
+      /* Footer section */
+      .footer {
+        height: 10%;
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid #ddd;
+      }
+  
+      .footer p {
+        margin: 0;
+        font-size: 14px;
+        color: #888;
+      }

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tittle> E Commers Web</tittle>
+    <link rel="stylesheet" href="style.css">
+</header>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Oshada</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+            <div class="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- The carousel container -->
+<div class="carousel">
+    <!-- The carousel slides -->
+    <div class="carousel-slide active">
+      <img src="./MV5BZmQ0NDNjODktMzNjZi00ZTgzLWFkNzAtODEzZDkxNzQ1ZmY2XkEyXkFqcGdeQXVyMzIwNDY4NDI@._V1_.jpg" alt="Slide 1">
+    </div>
+    <div class="carousel-slide">
+      <img src="./wolf 2021.jpg" alt="Slide 2">
+    </div>
+    <div class="carousel-slide">
+      <img src="./Xtreme 2021.jpg" alt="Slide 3">
+    </div>
+    <!-- Add more slides as needed -->
+  </div>
+
+  <!--catagory-->
+  
+   <!-- Page Container -->
+   <div class="page-container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Shop by Category</h1>
+    </div>
+
+    <!-- Category Section -->
+    <div class="category-section">
+      <div class="categories">
+        <div class="category">
+          <img src="./image/Vegetables.jfif" alt="Vegetables">
+          <div class="category-label">Vegetables</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Fruits.jpeg" alt="Fruits">
+          <div class="category-label">Fruits</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Baby Products.jpg" alt="Baby Products">
+          <div class="category-label">Baby Products</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Dairy.jfif" alt="Dairy">
+          <div class="category-label">Dairy</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Beverages.jpeg" alt="Beverages">
+          <div class="category-label">Beverages</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Food Cupboard.jpg" alt="Food Cupboard">
+          <div class="category-label">Food Cupboard</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Household.jpg" alt="Household">
+          <div class="category-label">Household</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Cooking Essentials.jpg" alt="Cooking Essentials">
+          <div class="category-label">Cooking Essentials</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Bakery.jpg" alt="Bakery">
+          <div class="category-label">Bakery</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Frozen Food.jpg" alt="Frozen Food">
+          <div class="category-label">Frozen Food</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Meats.jpg" alt="Meats">
+          <div class="category-label">Meats</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Seafood.jfif" alt="Seafood">
+          <div class="category-label">Seafood</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Snacks & Confectionery.jfif" alt="Snacks & Confectionery">
+          <div class="category-label">Snacks & Confectionery</div>
+        </div>
+
+        <div class="category">
+          <img src="./image/Rice.jfif" alt="Rice">
+          <div class="category-label">Rice</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; 2024 Your Shop. All Rights Reserved.</p>
+    </div>
+  </div>
+
+</body>
+<script>const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
+    
+    burgerMenu.addEventListener('click', () => {
+      burgerMenu.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    
+    // Get the carousel container and slides
+const carousel = document.querySelector('.carousel');
+const slides = document.querySelectorAll('.carousel-slide');
+
+// Set the interval for the auto slider
+const interval = 3000; // 3 seconds
+
+// Set the current slide index
+let currentSlide = 0;
+
+// Function to show the next slide
+function showNextSlide() {
+  // Hide the current slide
+  slides[currentSlide].classList.remove('active');
+  
+  // Increment the current slide index
+  currentSlide = (currentSlide + 1) % slides.length;
+  
+  // Show the next slide
+  slides[currentSlide].classList.add('active');
+}
+
+// Set the interval for the auto slider
+setInterval(showNextSlide, interval);</script>
+
+</html>
